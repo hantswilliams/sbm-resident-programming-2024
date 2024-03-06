@@ -2,7 +2,7 @@
 
 In this five-part mini-series, we will learn the power of Python and its real-world applications within medicine. Our first session, 'Going from CSV/Excel to Python,' will introduce you to the Python environment, focusing on IDEs, cloud-based platforms, and the pivotal role of pandas and Jupyter Notebooks in data handling. The second part, 'Automation with Scripting,' will explore how Python can automate time-consuming tasks, emphasizing script writing and various output formats like text, CSV/Excel, and PowerPoint. In our third session, 'Data Visualization in Python,' we will delve into creating impactful visual representations of data using libraries like Matplotlib and Seaborn. The fourth session, 'Statistical Analysis with Python,' will cover essential statistical techniques using NumPy and SciPy, vital for analyzing clinical data. Finally, 'Integrating External Data Sources' will teach you how to incorporate and analyze data from various external sources, focusing on APIs and ethical data handling. This series is designed to equip you with the tools and knowledge to apply Python effectively in your medical practice, enhancing both your research capabilities and clinical decision-making.
 
-# Week 1 (Part 1): Going from CSV/Excel to Python
+# Week 1: Going from CSV/Excel to Python
 
 ## Objective
 Introduce Python environments and basic data handling using pandas.
