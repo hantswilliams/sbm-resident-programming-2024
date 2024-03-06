@@ -11,7 +11,7 @@ from scipy import stats  # A great statistical module from the scipy library
 ### Connecting to Google Drive and importing the data
 """
 
-df = pd.read_csv('descriptive/example1/data/data.csv')  # Import the csv file
+df = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/sbm-resident-programming-2024/main/Code/Wk1/Data/data.csv')  # Import the csv file
 
 df  # Display the dataframe to the screen
 
