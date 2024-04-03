@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Big files 
+Code/Wk3/data/PLACES__Local_Data_for_Better_Health__Census_Tract_Data_2023_release_20240403.csv
+
 # Distribution / packaging
 .Python
 build/
