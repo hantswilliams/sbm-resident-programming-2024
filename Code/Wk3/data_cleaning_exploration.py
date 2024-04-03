@@ -70,22 +70,3 @@ outline.plot("filtered_gdf", legend=False, figsize=(25, 25))
 
 
 
-
-geojson = filtered_gdf.__geo_interface__
-
-# Create an interactive map using Plotly Express
-fig = px.choropleth_mapbox(filtered_gdf,
-                           geojson=geojson,
-                           locations=filtered_gdf.index,
-                           color="Data_Value",
-                           color_continuous_scale="OrRd",
-                           range_color=(filtered_gdf["Data_Value"].min(), filtered_gdf["Data_Value"].max()),
-                           mapbox_style="carto-positron",
-                           zoom=5,
-                           center={"lat": filtered_gdf.geometry.centroid.y.mean(), 
-                                   "lon": filtered_gdf.geometry.centroid.x.mean()},
-                           opacity=0.5,
-                           labels={"Data_Value": "Obesity Prevalence (%)"})
-fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},
-                  title_text="Obesity Prevalence in New York State by Census Block")
-fig.show()
