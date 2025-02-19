@@ -62,8 +62,13 @@ filtered_gdf = merged_gdf[(merged_gdf['Measure'] == 'Obesity among adults aged >
 
 ## keep only unique rows with a unique LocationID
 outline = merged_gdf.drop_duplicates(subset='LocationID')
-outline.plot("filtered_gdf", legend=False, figsize=(25, 25)) 
 
+## then plot the outline and the filtered data
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(10, 10))
+outline.boundary.plot(ax=ax)
+filtered_gdf.plot(ax=ax, color='red')
+plt.show()
 
 
 

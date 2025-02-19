@@ -45,3 +45,7 @@ st.bar_chart(longisland_pivot)
 ## get value counts of Data_Value_Type
 longisland['Data_Value_Type'].value_counts()
 longisland['Measure'].value_counts()
+
+## give the value counts of Data_Value_Type in streamlit tables
+st.write(longisland['Data_Value_Type'].value_counts())
+st.write(longisland['Measure'].value_counts())
